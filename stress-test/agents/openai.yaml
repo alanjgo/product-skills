@@ -1,0 +1,4 @@
+interface:
+  display_name: "stress test"
+  short_description: "Pressure-test concepts with a CEO/CPO lens"
+  default_prompt: "Use $stress-test to pressure-test this concept the way a Staycation CEO/CPO would."
