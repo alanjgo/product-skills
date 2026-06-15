@@ -1,6 +1,6 @@
-# Staycation Product Skills
+# Staycation Product Agent Skills
 
-Two open-source Codex skills for product decision work:
+Two open-source agent skills for product decision work:
 
 - `ab-test`: analyze A/B test results as a senior product manager and turn experiment metrics into a rollout, rollback, or retest decision.
 - `stress-test`: pressure-test a product concept, spec, launch plan, roadmap proposal, or recommendation through a Staycation CEO/CPO lens.
@@ -8,33 +8,34 @@ Two open-source Codex skills for product decision work:
 Each skill is a self-contained folder with:
 
 - `SKILL.md`: the agent instructions and trigger metadata.
-- `agents/openai.yaml`: optional Codex UI metadata for display name, short description, and default prompt.
+- `agents/openai.yaml`: optional runtime metadata for compatible agent clients.
 
 ## Installation
 
-Clone the repository, then copy the skills into your Codex skills directory:
+Clone the repository:
 
 ```bash
 git clone https://github.com/alanjgo/staycation-product-skills.git
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R staycation-product-skills/ab-test "${CODEX_HOME:-$HOME/.codex}/skills/"
-cp -R staycation-product-skills/stress-test "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-If you prefer to keep the repository as the source of truth, symlink the folders instead:
+Then install each skill according to your agent runtime's convention. The portable source of truth is each `SKILL.md` file:
+
+- `staycation-product-skills/ab-test/SKILL.md`
+- `staycation-product-skills/stress-test/SKILL.md`
+
+For agents that support local skill folders, copy or symlink the two folders into that agent's skills directory:
 
 ```bash
-git clone https://github.com/alanjgo/staycation-product-skills.git ~/Code/staycation-product-skills
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-ln -sfn ~/Code/staycation-product-skills/ab-test "${CODEX_HOME:-$HOME/.codex}/skills/ab-test"
-ln -sfn ~/Code/staycation-product-skills/stress-test "${CODEX_HOME:-$HOME/.codex}/skills/stress-test"
+mkdir -p ~/.agent/skills
+cp -R staycation-product-skills/ab-test ~/.agent/skills/
+cp -R staycation-product-skills/stress-test ~/.agent/skills/
 ```
 
-Restart Codex after installation so the skills are discovered.
+If your agent does not have a skill-folder system, paste or reference the relevant `SKILL.md` content in the agent's system instructions, project instructions, or custom prompt library.
 
 ## Usage Examples
 
-Invoke a skill explicitly with `$skill-name`.
+Invoke a skill by name using your agent's preferred syntax. If your agent supports `$skill-name`, use:
 
 ```text
 Use $ab-test to analyze this experiment:
