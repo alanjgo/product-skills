@@ -1,4 +1,4 @@
-# Staycation Product Agent Skills
+# Skills for Product Managers
 
 Two open-source agent skills for product decision work:
 
