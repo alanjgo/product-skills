@@ -4,6 +4,7 @@ Open-source agent skills for product decision work:
 
 - `ab-test`: analyze A/B test results as a senior product manager and turn experiment metrics into a rollout, rollback, or retest decision.
 - `business-opportunity`: size and assess Staycation business opportunities through GMV levers.
+- `data`: draft readable PostgreSQL queries for Staycation marketplace data questions.
 - `documentation`: write concise product documentation for mixed product, business, marketing, and tech audiences.
 - `point-etape`: turn rough meeting notes into a decision-ready French checkpoint update.
 - `prd`: draft or improve concise, outcome-driven PRDs.
@@ -28,6 +29,7 @@ Then install each skill according to your agent runtime's convention. The portab
 
 - `product-skills/ab-test/SKILL.md`
 - `product-skills/business-opportunity/SKILL.md`
+- `product-skills/data/SKILL.md`
 - `product-skills/documentation/SKILL.md`
 - `product-skills/point-etape/SKILL.md`
 - `product-skills/prd/SKILL.md`
@@ -40,6 +42,7 @@ For agents that support local skill folders, copy or symlink the skill folders i
 mkdir -p ~/.agent/skills
 cp -R product-skills/ab-test ~/.agent/skills/
 cp -R product-skills/business-opportunity ~/.agent/skills/
+cp -R product-skills/data ~/.agent/skills/
 cp -R product-skills/documentation ~/.agent/skills/
 cp -R product-skills/point-etape ~/.agent/skills/
 cp -R product-skills/prd ~/.agent/skills/
@@ -70,6 +73,7 @@ Install only one skill:
 ```bash
 npx skills add alanjgo/product-skills --skill ab-test --yes
 npx skills add alanjgo/product-skills --skill business-opportunity --yes
+npx skills add alanjgo/product-skills --skill data --yes
 npx skills add alanjgo/product-skills --skill documentation --yes
 npx skills add alanjgo/product-skills --skill point-etape --yes
 npx skills add alanjgo/product-skills --skill prd --yes
@@ -88,6 +92,7 @@ Use a skill once without installing it:
 ```bash
 npx skills use alanjgo/product-skills@ab-test
 npx skills use alanjgo/product-skills@business-opportunity
+npx skills use alanjgo/product-skills@data
 npx skills use alanjgo/product-skills@documentation
 npx skills use alanjgo/product-skills@point-etape
 npx skills use alanjgo/product-skills@prd
@@ -141,6 +146,17 @@ Expected output includes:
 - Key results
 - Customer problem
 - Target market
+
+### `data`
+
+Use this skill to draft readable PostgreSQL queries for Staycation marketplace questions. It asks the agent to check schema sources before choosing tables, joins, filters, grain, and output shape.
+
+Expected output includes:
+
+- Question recap
+- Assumptions
+- SQL query
+- Validation notes
 
 ### `documentation`
 
@@ -207,6 +223,10 @@ Expected output includes:
 │   └── SKILL.md
 ├── business-opportunity/
 │   └── SKILL.md
+├── data/
+│   ├── SKILL.md
+│   └── references/
+│       └── schema-sources.md
 ├── documentation/
 │   └── SKILL.md
 ├── point-etape/
@@ -229,6 +249,7 @@ Validate the skills with the official reference validator:
 python -m pip install "git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref"
 skills-ref validate ./ab-test
 skills-ref validate ./business-opportunity
+skills-ref validate ./data
 skills-ref validate ./documentation
 skills-ref validate ./point-etape
 skills-ref validate ./prd
