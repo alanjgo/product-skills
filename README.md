@@ -34,6 +34,42 @@ cp -R product-skills/stress-test ~/.agent/skills/
 
 If your agent does not have a skill-folder system, paste or reference the relevant `SKILL.md` content in the agent's system instructions, project instructions, or custom prompt library.
 
+### Install with `npx skills`
+
+You can also install directly from this public GitHub repository with the `skills` CLI. Publishing to `skills.sh` is not required.
+
+List the skills available in the repository:
+
+```bash
+npx skills add alanjgo/product-skills --list
+```
+
+Install both skills:
+
+```bash
+npx skills add alanjgo/product-skills --skill '*' --yes
+```
+
+Install only one skill:
+
+```bash
+npx skills add alanjgo/product-skills --skill ab-test --yes
+npx skills add alanjgo/product-skills --skill stress-test --yes
+```
+
+Install for Claude Code specifically:
+
+```bash
+npx skills add alanjgo/product-skills --agent claude-code --skill '*' --yes
+```
+
+Use a skill once without installing it:
+
+```bash
+npx skills use alanjgo/product-skills@ab-test
+npx skills use alanjgo/product-skills@stress-test
+```
+
 ## Usage Examples
 
 Invoke a skill by name using your agent's preferred syntax. If your agent supports `$skill-name`, use:
