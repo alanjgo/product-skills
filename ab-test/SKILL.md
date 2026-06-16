@@ -1,6 +1,7 @@
 ---
 name: ab-test
 description: Analyser les résultats d'un test A/B comme un senior product manager. À utiliser quand l'utilisateur partage des métriques d'expérience, des captures d'écran ou un résumé de résultats et veut des enseignements, des points de vigilance, une lecture par segment, une estimation de l'impact business, ou une recommandation de déploiement, de retour arrière ou de nouveau test.
+license: MIT
 ---
 
 # Analyse de test A/B

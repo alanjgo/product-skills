@@ -8,7 +8,8 @@ Two open-source agent skills for product decision work:
 Each skill is a self-contained folder with:
 
 - `SKILL.md`: the agent instructions and trigger metadata.
-- `agents/openai.yaml`: optional runtime metadata for compatible agent clients.
+
+The repository follows the [Agent Skills specification](https://agentskills.io/specification): each skill directory contains a `SKILL.md` file with YAML frontmatter and Markdown instructions. No runtime-specific configuration is required.
 
 ## Installation
 
@@ -84,13 +85,21 @@ Expected output includes:
 ```text
 .
 ├── ab-test/
-│   ├── SKILL.md
-│   └── agents/openai.yaml
+│   └── SKILL.md
 ├── stress-test/
-│   ├── SKILL.md
-│   └── agents/openai.yaml
+│   └── SKILL.md
 ├── LICENSE
 └── README.md
+```
+
+## Validation
+
+Validate both skills with the official reference validator:
+
+```bash
+python -m pip install "git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref"
+skills-ref validate ./ab-test
+skills-ref validate ./stress-test
 ```
 
 ## License

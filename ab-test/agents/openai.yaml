@@ -1,4 +1,0 @@
-interface:
-  display_name: "ab-test"
-  short_description: "Analyser un test A/B, ses segments et la décision à prendre"
-  default_prompt: "Utilise $ab-test pour analyser ces résultats d'expérience, repérer les écarts par segment, estimer l'impact business, et recommander un déploiement, un retour arrière ou une nouvelle itération."

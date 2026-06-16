@@ -1,6 +1,7 @@
 ---
 name: stress-test
 description: Pressure-test a product concept, spec, launch idea, roadmap proposal, or strategic recommendation through a Staycation executive lens. Use when the user wants to know what the CEO or CPO would challenge, where the reasoning is weak, whether the problem is worth solving, or how to rewrite the concept so it survives leadership scrutiny.
+license: MIT
 ---
 
 # Stress Test

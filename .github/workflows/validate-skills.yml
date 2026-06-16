@@ -1,0 +1,27 @@
+name: Validate Agent Skills
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Agent Skills reference validator
+        run: python -m pip install "git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref"
+
+      - name: Validate skills
+        run: |
+          skills-ref validate ./ab-test
+          skills-ref validate ./stress-test
