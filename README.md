@@ -16,20 +16,20 @@ The repository follows the [Agent Skills specification](https://agentskills.io/s
 Clone the repository:
 
 ```bash
-git clone https://github.com/alanjgo/staycation-product-skills.git
+git clone https://github.com/alanjgo/product-skills.git
 ```
 
 Then install each skill according to your agent runtime's convention. The portable source of truth is each `SKILL.md` file:
 
-- `staycation-product-skills/ab-test/SKILL.md`
-- `staycation-product-skills/stress-test/SKILL.md`
+- `product-skills/ab-test/SKILL.md`
+- `product-skills/stress-test/SKILL.md`
 
 For agents that support local skill folders, copy or symlink the two folders into that agent's skills directory:
 
 ```bash
 mkdir -p ~/.agent/skills
-cp -R staycation-product-skills/ab-test ~/.agent/skills/
-cp -R staycation-product-skills/stress-test ~/.agent/skills/
+cp -R product-skills/ab-test ~/.agent/skills/
+cp -R product-skills/stress-test ~/.agent/skills/
 ```
 
 If your agent does not have a skill-folder system, paste or reference the relevant `SKILL.md` content in the agent's system instructions, project instructions, or custom prompt library.
