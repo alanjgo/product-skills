@@ -11,7 +11,7 @@ Summarize active projects into a short weekly update focused on progress, decisi
 ## Workflow
 
 1. Identify relevant projects inside the squad.
-2. Prioritize projects in `Co-conception`, `Framing`, or `Discovery` style phases, based on the available Linear status labels.
+2. Prioritize projects based on the available Linear status labels.
 3. Gather recent project information from:
    - Linear updates
    - Granola notes
@@ -21,7 +21,7 @@ Summarize active projects into a short weekly update focused on progress, decisi
 ## Output
 
 ```md
-## [Nom du projet]
+## [Project name]
 
 ### This week
 - Maximum 3 bullets
