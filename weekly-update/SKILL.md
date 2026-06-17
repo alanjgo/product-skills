@@ -1,6 +1,6 @@
 ---
 name: weekly-update
-description: Prepare concise weekly French updates for PELU projects from Linear, Granola, and Notion context. Use when the user wants a Friday summary of what happened this week and what is planned next week for Peloton User projects.
+description: Prepare concise weekly updates for squad projects from Linear, Granola, and Notion context. Use when the user wants a Friday summary of what happened this week and what is planned next week for projects.
 license: MIT
 ---
 
@@ -10,7 +10,7 @@ Summarize active PELU projects into a short weekly update focused on progress, d
 
 ## Workflow
 
-1. Identify relevant `PELU` projects.
+1. Identify relevant projects inside the squad.
 2. Prioritize projects in `Co-conception`, `Framing`, or `Discovery` style phases, based on the available Linear status labels.
 3. Gather recent project information from:
    - Linear updates
@@ -19,8 +19,6 @@ Summarize active PELU projects into a short weekly update focused on progress, d
 4. Write a short block for each project.
 
 ## Output
-
-Use this structure in French.
 
 ```md
 ## [Nom du projet]
