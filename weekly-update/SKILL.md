@@ -6,7 +6,7 @@ license: MIT
 
 # Weekly Project Update
 
-Summarize active PELU projects into a short weekly update focused on progress, decisions, and next steps.
+Summarize active projects into a short weekly update focused on progress, decisions, and next steps.
 
 ## Workflow
 
