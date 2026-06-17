@@ -1,10 +1,10 @@
 ---
 name: data
-description: Draft readable PostgreSQL queries for Staycation business questions. Use when the user asks for SQL, analysis logic, or data exploration on Staycation marketplace data, especially users, hotels, packages, inventory, publishing state, or booking performance.
+description: Draft readable PostgreSQL queries for business questions. Use when the user asks for SQL, analysis logic, or data exploration.
 license: MIT
 ---
 
-# Staycation SQL
+# SQL
 
 Write simple, readable PostgreSQL queries and ground them in the available schema files before making assumptions.
 
