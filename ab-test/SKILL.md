@@ -1,6 +1,6 @@
 ---
 name: ab-test
-description: Analyser les résultats d'un test A/B comme un senior product manager. À utiliser quand l'utilisateur partage des métriques d'expérience, des captures d'écran ou un résumé de résultats et veut des enseignements, des points de vigilance, une lecture par segment, une estimation de l'impact business, ou une recommandation de déploiement, de retour arrière ou de nouveau test.
+description: Analyze A/B test results like a senior product manager. Use when the user shares experiment metrics, screenshots, or a results summary and wants insights, watchouts, segment analysis, a business impact estimate, or a recommendation to roll out, roll back, or run another test.
 license: MIT
 ---
 
