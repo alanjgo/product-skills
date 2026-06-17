@@ -92,4 +92,4 @@ Rewrite the concept in a way that better connects problem, user, business value,
 - Use short, direct sentences.
 - Prefer sharp tradeoffs over balanced but vague commentary.
 - Do not soften weak logic.
-- When possible, connect the critique to Staycation-specific concerns such as GMV, conversion, supply quality, prioritization, and execution focus.
+- When possible, connect the critique to company-specific concerns such as GMV, conversion, supply quality, prioritization, and execution focus.
