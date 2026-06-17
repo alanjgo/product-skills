@@ -10,12 +10,7 @@ Write simple, readable PostgreSQL queries and ground them in the available schem
 
 ## Schema source
 
-Read [references/schema-sources.md](references/schema-sources.md) before writing non-trivial queries.
-
-Use this priority order:
-
-1. `data/db_schema_snowflake.json`
-2. `data/db_schema.json`
+[if empty, ask user to add their database schema as a json file and send instricutions to get database schema]. 
 
 ## Workflow
 
@@ -31,14 +26,10 @@ Use this priority order:
 
 ## Output
 
-1. `Rappel de la question`
-2. `Hypothèses` when needed
-3. `Requête SQL`
-4. `Notes / validations éventuelles`
+1. `Hypotheses` when needed
+2. `SQL request`
+3. `Additional notes or validations required`
 
 ## Business context
 
-- Staycation is a marketplace for hotel experiences and packages.
-- Users buy packages.
-- Hotels manage opening inventory.
-- Packages often need to be published to be visible.
+if empty, ask user to add company context, or specifities.
