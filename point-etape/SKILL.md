@@ -21,25 +21,23 @@ Turn rough meeting material into a decision-ready checkpoint update in French.
 Use this Markdown structure by default.
 
 ```md
-# [Titre de la reunion ou sujet]
+# [Meeting title]
 
-## 1. Objectif de la reunion
+## 1. Meeting objective
 
-## 2. Contexte et importance du sujet
+## 2. Context and why it is important
 
-## 3. Perimetre
-### Inclus
-### Non inclus
+## 3. Scope
+### In scope
+### Not included
 
-## 4. Recommandation et prochaines etapes
-### Recommandation
-### Prochaines etapes
-- Etape 1 - Responsable - Echeance
+## 4. Recommandations and next steps 
+### Recommandations
+### Next steps
+i.e (Step 1 @alan - lead user interviews)
 ```
 
 ## Style
-
-- Write in French.
 - Be direct and decision-oriented.
 - Remove ambiguity about what has been done and what comes next.
 - Do not use emojis.
