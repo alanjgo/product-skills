@@ -1,7 +1,6 @@
 ---
 name: point-etape
 description: Structure and clarify a meeting checkpoint in French. Use when the user shares raw notes, a transcript, bullets, or meeting context and wants a clean summary with objective, context, scope, recommendation, and next steps.
-license: MIT
 ---
 
 # Point d'etape

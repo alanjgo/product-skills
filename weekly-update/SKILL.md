@@ -1,7 +1,6 @@
 ---
 name: weekly-update
 description: Prepare concise weekly updates for squad projects from Linear, Granola, and Notion context. Use when the user wants a Friday summary of what happened this week and what is planned next week for projects.
-license: MIT
 ---
 
 # Weekly Project Update

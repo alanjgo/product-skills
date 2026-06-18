@@ -1,7 +1,6 @@
 ---
 name: prd
 description: Draft or improve concise, outcome-driven PRDs for product teams. Use when the user wants to create, restructure, or sharpen a Product Requirement Document from notes, ideas, Slack threads, or existing drafts.
-license: MIT
 ---
 
 # PRD Writer

@@ -1,7 +1,6 @@
 ---
 name: documentation
 description: Write or improve concise product documentation for Staycation in Markdown. Use when the user wants to document a feature, product area, internal process, or functional behavior for business, marketing, tech, or other stakeholders.
-license: MIT
 ---
 
 # Product Documentation

@@ -1,7 +1,6 @@
 ---
 name: business-opportunity
 description: Size and assess Staycation business opportunities with a product-management lens centered on GMV. Use when the user wants to evaluate, compare, or document a new feature, growth idea, segment expansion, or marketplace opportunity.
-license: MIT
 ---
 
 # Business Opportunity
