@@ -8,6 +8,7 @@ Open-source agent skills for product decision work:
 - `documentation`: write concise product documentation for mixed product, business, marketing, and tech audiences.
 - `point-etape`: turn rough meeting notes into a decision-ready checkpoint update.
 - `prd`: draft or improve concise, outcome-driven PRDs.
+- `release-note`: write internal Slack release notes for feature launches, fastlane changes, hotfixes, and A/B tests.
 - `stress-test`: pressure-test a product concept, spec, launch plan, roadmap proposal, or recommendation through a CEO/CPO lens.
 - `weekly-update`: prepare concise weekly French updates for squad projects.
 
@@ -72,14 +73,14 @@ Tell me what a CEO/CPO would challenge and rewrite it so it is easier to defend.
 ├── business-opportunity/
 │   └── SKILL.md
 ├── data/
-│   ├── SKILL.md
-│   └── references/
-│       └── schema-sources.md
+│   └── SKILL.md
 ├── documentation/
 │   └── SKILL.md
 ├── point-etape/
 │   └── SKILL.md
 ├── prd/
+│   └── SKILL.md
+├── release-note/
 │   └── SKILL.md
 ├── stress-test/
 │   └── SKILL.md
